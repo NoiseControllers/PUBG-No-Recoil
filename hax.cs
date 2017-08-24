@@ -41,6 +41,11 @@ namespace NoRecoil
             if (!isShooting) isShooting = true;
         }
 
+        private void GlobalHookMouseUpExt(object sender, MouseEventExtArgs e)
+        {
+            if (isShooting) isShooting = false;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             enabled = true;
