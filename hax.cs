@@ -21,6 +21,20 @@ namespace NoRecoil
         }
         private bool enabled = false;
         private bool _isShooting = false;
+        
+        private void EnableNoRecoil()
+        {
+            int y = Cursor.Position.Y;
+            int x = Cursor.Position.X;
+            int i = 1;
+
+            while (i < 20)
+            {
+                Cursor.Position = new Point(Cursor.Position.X, Cursor.Position.Y + 15);
+                System.Threading.Thread.Sleep(25);
+                i++;
+            }
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
