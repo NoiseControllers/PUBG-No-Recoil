@@ -35,6 +35,11 @@ namespace NoRecoil
                 i++;
             }
         }
+        
+        private void GlobalHookMouseDownExt(object sender, MouseEventExtArgs e)
+        {
+            if (!isShooting) isShooting = true;
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
