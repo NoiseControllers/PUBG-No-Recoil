@@ -24,12 +24,12 @@ namespace NoRecoil
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            enabled = true;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            enable = false;
         }
     }
 }
